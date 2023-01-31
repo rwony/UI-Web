@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COMENTO - UI Markup</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="gnb">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+              <!-- USER INFO -->
+              <div class="user-info lg-only">
+                <div>
+                  <i class="" aria-hidden="true"></i>
+                  <span>AIDA VERA</span>
+                </div>
+
+                <button type="button">LOGOUT</button>
+              </div>
+
+              <!-- GNB LEFT -->
+              <div class="gnb-left">
+                <h1>
+                  <a href="/">
+                    <img src="/" alt="LOGO" />
+                  </a>
+                </h1>
+
+                <button
+                  class="lg-hidden"
+                  type="button"
+                  aria-label="메뉴 열기 버튼"
+                >
+                  <i class="" aria-hidden="true"></i>
+                </button>
+              </div>
+
+              <!-- GNB RIGHT -->
+              <div class="gnb-right">
+                <!-- PC에서만 보이는 메뉴 -->
+                <nav class="lg-only">
+                  <h2 class="visually-hidden">메뉴</h2>
+                  <ul class="gnb-menu-list">
+                    <li class="gnb-menu-item is-active">
+                      <a href="/">PRODUCT SUPPORT</a>
+                      <div class="drawer-menu">
+                        <ul class="drawer-menu-list">
+                          <li class="drawer-menu-item">
+                            <a href="/">Ranges</a>
+                          </li>
+                          <li class="drawer-menu-item">
+                            <a href="/">Cooktops</a>
+                          </li>
+                          <li class="drawer-menu-item">
+                            <a href="/">Wall Ovens</a>
+                          </li>
+                          <li class="drawer-menu-item">
+                            <a href="/">Ventilation</a>
+                          </li>
+                          <li class="drawer-menu-item">
+                            <a href="/">Microwaves</a>
+                          </li>
+                          <li class="drawer-menu-item">
+                            <a href="/">Warming Drawers</a>
+                          </li>
+                          <li class="drawer-menu-item">
+                            <a href="/">Outdoor</a>
+                          </li>
+                          <li class="drawer-menu-item">
+                            <a href="/">Refrigeration</a>
+                          </li>
+                          <li class="drawer-menu-item">
+                            <a href="/">Wine &amp; Beverage</a>
+                          </li>
+                          <li class="drawer-menu-item">
+                            <a href="/">Dishwashers</a>
+                          </li>
+                          <li class="drawer-menu-item">
+                            <a href="/">Accessories</a>
+                          </li>
+                          <li class="drawer-menu-item">
+                            <a href="/">Coffee Systems</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+
+                    <li class="gnb-menu-item">
+                      <a href="/">TOPICS</a>
+                      <div class="drawer-menu">
+                        <ul class="drawer-menu-list">
+                          <li class="drawer-menu-item">
+                            <a href="/">ERROR CODES</a>
+                          </li>
+                          <li class="drawer-menu-item">
+                            <a href="/">SERVICE GUIDE</a>
+                          </li>
+                          <li class="drawer-menu-item">
+                            <a href="/">PARTS CATALOG</a>
+                          </li>
+                          <li class="drawer-menu-item">
+                            <a href="/">SYMPTOMS</a>
+                          </li>
+                          <li class="drawer-menu-item">
+                            <a href="/">PRODUCT INFO</a>
+                          </li>
+                          <li class="drawer-menu-item">
+                            <a href="/">FAQ</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+
+                    <li class="gnb-menu-item">
+                      <a href="/">Training</a>
+                      <div class="drawer-menu">
+                        <ul class="drawer-menu-list">
+                          <li class="drawer-menu-item">
+                            <a href="/">TECHNICAL</a>
+                          </li>
+                          <li class="drawer-menu-item">
+                            <a href="/">CUSTOMER SERVICE</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+
+                    <li class="gnb-menu-item"><a>NEWSLetters</a></li>
+                    <li class="gnb-menu-item"><a>ADMIN</a></li>
+                  </ul>
+                </nav>
+
+                <button type="button" aria-label="검색 버튼">
+                  <i class=""></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <!-- SECTION: MAIN SEARCH AREA  -->
+            <section class="main-search-area">
+              <header class="main-search-area-header">
+                <h2><span>Know your</span>Product / Serial Number?</h2>
+              </header>
+
+              <div class="main-search-area-content">
+                <div class="main-search-form-wr ap">
+                  <select>
+                    <option>Product</option>
+                  </select>
+                  <input type="text" placeholder="Enter your model number" />
+                  <button type="button" aria-label="검색 버튼">
+                    <i class=""></i>
+                  </button>
+                </div>
+              </div>
+
+              <div class="main-search-area-bread sm-only">
+                <span>Home</span>
+              </div>
+            </section>
+
+            <!-- SECTION: PRODUCT CATEGORY -->
+            <section class="product-category">
+              <header class="product-category-header">
+                <h2>PRODUCT <span>CATEGORY</span></h2>
+                <span>
+                  Start your product knowledge discovery by selecting it's
+                  category
+                </span>
+              </header>
+
+              <div class="product-category-content">
+                <ul class="product-category-list">
+                  <li class="product-category-item">
+                    <div>
+                      <img src="/" alt="RANGES Image" />
+                      <span>RANGES</span>
+                    </div>
+                  </li>
+                  <li class="product-category-item">
+                    <div>
+                      <img src="/" alt="COOKTOPS Image" />
+                      <span>COOKTOPS</span>
+                    </div>
+                  </li>
+                  <li class="product-category-item">
+                    <div>
+                      <img src="/" alt="WALL OVENS Image" />
+                      <span>WALL OVENS</span>
+                    </div>
+                  </li>
+                  <li class="product-category-item">
+                    <div>
+                      <img src="/" alt="VENTILATION Image" />
+                      <span>VENTILATION</span>
+                    </div>
+                  </li>
+                  <li class="product-category-item">
+                    <div>
+                      <img src="/" alt="MICROWAVES Image" />
+                      <span>MICROWAVES</span>
+                    </div>
+                  </li>
+                  <li class="product-category-item">
+                    <div>
+                      <img src="/" alt="WARMING DRAWER Image" />
+                      <span>WARMING DRAWER</span>
+                    </div>
+                  </li>
+                  <li class="product-category-item">
+                    <div>
+                      <img src="/" alt="OUTDOOR Image" />
+                      <span>OUTDOOR</span>
+                    </div>
+                  </li>
+                  <li class="product-category-item">
+                    <div>
+                      <img src="/" alt="REFRIGERATION Image" />
+                      <span>REFRIGERATION</span>
+                    </div>
+                  </li>
+                  <li class="product-category-item">
+                    <div>
+                      <img src="/" alt="WINE & BEVERAGE Image" />
+                      <span>WINE &amp; BEVERAGE</span>
+                    </div>
+                  </li>
+                  <li class="product-category-item">
+                    <div>
+                      <img src="/" alt="DISHWASHERS Image" />
+                      <span>DISHWASHERS</span>
+                    </div>
+                  </li>
+                  <li class="product-category-item">
+                    <div>
+                      <img src="/" alt="ACCESSORIES Image" />
+                      <span>ACCESSORIES</span>
+                    </div>
+                  </li>
+                  <li class="product-category-item">
+                    <div>
+                      <img src="/" alt="COFFEE SYSTEMS Image" />
+                      <span>COFFEE SYSTEMS</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </section>
+
+            <!-- SECTION: TOPICS -->
+            <section class="topics">
+              <header class="topics-header">
+                <h2>TOPICS</h2>
+                <span>
+                  You can access knowledge detail by knowledge content type
+                </span>
+              </header>
+
+              <div class="topics-content">
+                <ul class="topics-list">
+                  <li class="topics-item">
+                    <div>
+                      <img src="/" alt="ERROR CODES Image" />
+                      <span>ERROR CODES</span>
+                    </div>
+                  </li>
+                  <li class="topics-item">
+                    <div>
+                      <img src="/" alt="SERVICE GUIDE Image" />
+                      <span>SERVICE GUIDE</span>
+                    </div>
+                  </li>
+                  <li class="topics-item">
+                    <div>
+                      <img src="/" alt="PARTS CATALOG Image" />
+                      <span>PARTS CATALOG</span>
+                    </div>
+                  </li>
+                  <li class="topics-item">
+                    <div>
+                      <img src="/" alt="SYMPTOMS Image" />
+                      <span>SYMPTOMS</span>
+                    </div>
+                  </li>
+                  <li class="topics-item">
+                    <div>
+                      <img src="/" alt="PRODUCT INFO Image" />
+                      <span>PRODUCT INFO</span>
+                    </div>
+                  </li>
+                  <li class="topics-item">
+                    <div>
+                      <img src="/" alt="FAQ Image" />
+                      <span>FAQ</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </section>
+
+            <!-- SECTION: RECENT SEARCHED -->
+            <section class="recent-searched">
+              <header class="recent-searched-header">
+                <h2><span>RECENT</span> SEARCHED</h2>
+                <span>
+                  You can access knowledge detail by knowledge content type
+                </span>
+              </header>
+
+              <div class="recent-searched-content">
+                <ul class="recent-searched-list">
+                  <li class="recent-searched-item">
+                    <div>
+                      <img src="/" alt="RF22N9781SG/AA Image" />
+                      <p>
+                        5.8 cu. ft. 30" Gas Chef Collection Pro Range with Dual
+                        Convection
+                      </p>
+                      <div>
+                        <a href="/">
+                          <span>RF22N9781SG/AA</span>
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="recent-searched-item">
+                    <div>
+                      <img src="/" alt="NX58M9960PS/AA Image" />
+                      <p>
+                        5.8 cu. ft. 30" Gas Chef Collection Pro Range with Dual
+                        Convection
+                      </p>
+                      <div>
+                        <a href="/">
+                          <span>NX58M9960PS/AA</span>
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="recent-searched-item">
+                    <div>
+                      <img src="/" alt="NV51M9770SM/AA Image" />
+                      <p>30" Chef Collection Single Wall Oven with Flex Duo™</p>
+                      <div>
+                        <a href="/">
+                          <span>NV51M9770SM/AA</span>
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="recent-searched-item">
+                    <div>
+                      <img src="/" alt="RH29H9000SR/AA Image" />
+                      <p>
+                        29 cu. ft. Side-by-Side Food ShowCase Refrigerator with
+                        Metal Cooling
+                      </p>
+                      <div>
+                        <a href="/">
+                          <span>RH29H9000SR/AA</span>
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="recent-searched-item">
+                    <div>
+                      <img src="/" alt="DVG55M9600V/A3 Image" />
+                      <p></p>
+                      <div>
+                        <a href="/">
+                          <span>DVG55M9600V/A3</span>
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="recent-searched-item">
+                    <div>
+                      <img src="/" alt="WA50M7450AW/A4 Image" />
+                      <p>WA7450 5.0 cu. ft. Top Load Washer</p>
+                      <div>
+                        <a href="/">
+                          <span>WA50M7450AW/A4</span>
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </section>
+
+            <!-- SECTION: NEWS LETTER -->
+            <section class="news-letter">
+              <header class="news-letter-header">
+                <h2><span>Exceptional 24/7</span> Customer Care</h2>
+                <span>
+                  Our dedicated support team is ready to take your call 24/7. We
+                  are committed to ensuring you have an exceptional customer
+                  experience.
+                </span>
+              </header>
+
+              <div class="news-letter-content">
+                <!-- MOBILE -->
+                <a class="sm-only" href="/">
+                  <span>CONTACT US</span>
+                </a>
+
+                <!-- PC -->
+                <a class="lg-only" href="/">
+                  <span>CUSTOMER US</span>
+                </a>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <!-- SECTION: FOOTER LEFT -->
+            <section class="footer-left">
+              <h4 class="visually-hidden">MAIN MENUS</h4>
+
+              <div class="footer-left-content">
+                <div class="footer-left-content-product-support">
+                  <h4>Product Support</h4>
+                  <ul>
+                    <li>
+                      <a href="/">Wall Ovens</a>
+                    </li>
+                    <li>
+                      <a href="/">Ranges</a>
+                    </li>
+                    <li>
+                      <a href="/">Cooktops</a>
+                    </li>
+                    <li>
+                      <a href="/">Refigeration</a>
+                    </li>
+                    <li>
+                      <a href="/">Microwaves</a>
+                    </li>
+                    <li>
+                      <a href="/">Dishwashers</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="footer-left-content-topic">
+                  <h4>TOPIC</h4>
+                  <ul>
+                    <li>
+                      <a href="/">Error Codes</a>
+                    </li>
+                    <li>
+                      <a href="/">Service Guide</a>
+                    </li>
+                    <li>
+                      <a href="/">Parts Catalog</a>
+                    </li>
+                    <li>
+                      <a href="/">Symptoms</a>
+                    </li>
+                    <li>
+                      <a href="/">Product Info.</a>
+                    </li>
+                    <li>
+                      <a href="/">FAQ</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="footer-left-content-training">
+                  <h4>TRAINING</h4>
+                  <ul>
+                    <li>
+                      <a href="/">Technical Training</a>
+                    </li>
+                    <li>
+                      <a href="/">Customer Service Training</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="footer-left-content-newsletters">
+                  <h4><a href="/">NEWSLETTERS</a></h4>
+                </div>
+              </div>
+            </section>
+
+            <!-- SECTION: FOOTER RIGHT -->
+            <section class="footer-right">
+              <h4 class="visually-hidden">HOMEPAGE INFORMATION</h4>
+
+              <div class="footer-right-content">
+                <!-- SEARCH FORM -->
+                <div class="footer-right-search-form">
+                  <form action="/" method="get">
+                    <input
+                      type="text"
+                      name="search-word"
+                      placeholder="Search"
+                    />
+                    <button type="submit" aria-label="search">
+                      <i class=""></i>
+                    </button>
+                  </form>
+                </div>
+
+                <!-- INFORMATION -->
+                <div class="footer-right-info">
+                  <ul class="footer-right-info-list">
+                    <li class="footer-right-info-item">
+                      <a href="/">SITEMAP</a>
+                    </li>
+                    <li class="footer-right-info-item">
+                      <a href="/">PRIVACY POLICY</a>
+                    </li>
+                    <li class="footer-right-info-item">
+                      <a href="/">TERMS OF USE</a>
+                    </li>
+                    <li class="footer-right-info-item">
+                      <a href="/">CONTACT US</a>
+                    </li>
+                    <li class="footer-right-info-item">
+                      <a href="/">FOLLOW US</a>
+
+                      <!-- SNS -->
+                      <div class="sns-group">
+                        <ul class="icon-list">
+                          <li class="icon icon-item">
+                            <a href="/">
+                              <img
+                                class="icon-image icon-facebook"
+                                src="/"
+                                alt="facebook 바로가기"
+                              />
+                            </a>
+                          </li>
+                          <li class="icon icon-item">
+                            <a href="/">
+                              <img
+                                class="icon-image icon-twitter"
+                                src="/"
+                                alt="twitter 바로가기"
+                              />
+                            </a>
+                          </li>
+                          <li class="icon icon-item">
+                            <a href="/">
+                              <img
+                                class="icon-image icon-youtube"
+                                src="/"
+                                alt="youtube 바로가기"
+                              />
+                            </a>
+                          </li>
+                          <li class="icon icon-item">
+                            <a href="/">
+                              <img
+                                class="icon-image icon-pinterest"
+                                src="/"
+                                alt="pinterest 바로가기"
+                              />
+                            </a>
+                          </li>
+                          <li class="icon icon-item">
+                            <a href="/">
+                              <img
+                                class="icon-image icon-houzz"
+                                src="/"
+                                alt="houzz 바로가기"
+                              />
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- SEARCH MODAL -->
+    <aside class="search-modal">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <header class="search-modal-header">
+              <h1 class="visually-hidden">Search Form</h1>
+            </header>
+
+            <div class="search-modal-content">
+              <form action="/" method="get">
+                <input class="search-input" type="text" name="search-word" />
+                <button type="submit" aria-label="Search">
+                  <i class=""></i>
+                </button>
+              </form>
+
+              <!-- 닫기 버튼 -->
+              <button type="button" aria-label="close">
+                <i class="" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <header class="sidebar-header">
+        <h1 class="visually-hidden">Side bar</h1>
+      </header>
+
+      <nav class="sidebar-nav">
+        <h2 class="visually-hidden">Menu</h2>
+
+        <div class="sidebar-nav-menu">
+          <div class="drawer-menu">
+            <button
+              class="drawer-menu-button drawer-menu-title is-product-support"
+              type="button"
+            >
+              <span>PRODUCT SUPPORT</span>
+              <i class="" aria-hidden="true"></i>
+            </button>
+
+            <div class="drawer-menu-content">
+              <ul class="drawer-menu-content-list">
+                <li class="drawer-menu-content-item">
+                  <a href="/">Ranges</a>
+                </li>
+                <li class="drawer-menu-content-item">
+                  <a href="/">Cooktops</a>
+                </li>
+                <li class="drawer-menu-content-item">
+                  <a href="/">Wall Ovens</a>
+                </li>
+                <li class="drawer-menu-content-item">
+                  <a href="/">Ventilation</a>
+                </li>
+                <li class="drawer-menu-content-item">
+                  <a href="/">Microwaves</a>
+                </li>
+                <li class="drawer-menu-content-item">
+                  <a href="/">Warming Drawers</a>
+                </li>
+                <li class="drawer-menu-content-item">
+                  <a href="/">Outdoor</a>
+                </li>
+                <li class="drawer-menu-content-item">
+                  <a href="/">Refrigeration</a>
+                </li>
+                <li class="drawer-menu-content-item">
+                  <a href="/">Wine &amp; Beverage</a>
+                </li>
+                <li class="drawer-menu-content-item">
+                  <a href="/">Dishwashers</a>
+                </li>
+                <li class="drawer-menu-content-item">
+                  <a href="/">Accessories</a>
+                </li>
+                <li class="drawer-menu-content-item">
+                  <a href="/">Coffee Systems</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="drawer-menu">
+            <div class="drawer-menu-title">
+              <a href="/"><span>TOPICS</span></a>
+            </div>
+          </div>
+
+          <div class="drawer-menu">
+            <div class="drawer-menu-title">
+              <a href="/"><span>TRAINING</span></a>
+            </div>
+          </div>
+
+          <div class="drawer-menu">
+            <div class="drawer-menu-title">
+              <a href="/"><span>NEWSLETTERS</span></a>
+            </div>
+          </div>
+
+          <div class="drawer-menu">
+            <div class="drawer-menu-title">
+              <a href="/"><span>ADMIN</span></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="sidebar-nav-info">
+          <div class="drawer-menu">
+            <div class="drawer-menu-title">
+              <a href="/"><span>TERMS OF USE</span></a>
+            </div>
+          </div>
+          <div class="drawer-menu">
+            <div class="drawer-menu-title">
+              <a href="/"><span>CONTACT US</span></a>
+            </div>
+          </div>
+          <div class="drawer-menu">
+            <div class="drawer-menu-title">
+              <!-- LOGIN -->
+              <button class="" type="button" aria-label="Login">LOGIN</button>
+
+              <!-- LOGOUT -->
+              <button class="" type="button" aria-label="Logout">LOGOUT</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </aside>
+
+    <!-- LOGIN MODAL -->
+    <aside class="login-modal">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <header class="login-modal-header">
+              <h1 class="visually-hidden">Login</h1>
+
+              <img src="/" alt="logo" />
+              <button type="button" aria-label="Close">
+                <i class="" aria-hidden="true"></i>
+              </button>
+            </header>
+
+            <div class="login-modal-content">
+              <div class="login-modal-content-text">
+                <h2><span>Service Network for</span> Dacor Information</h2>
+              </div>
+
+              <div class="login-modal-content-form">
+                <form action="/" method="post">
+                  <div class="input-id">
+                    <i class="" aria-hidden="true"></i>
+                    <input type="text" name="user-id" placeholder="USER ID" />
+                  </div>
+                  <div class="input-pw">
+                    <i class="" aria-hidden="true"></i>
+                    <input
+                      type="password"
+                      name="user-password"
+                      placeholder="PASSWORD"
+                    />
+                  </div>
+                  <div class="input-check">
+                    <div class="check-remember">
+                      <input
+                        type="checkbox"
+                        name="check-remember"
+                        id="check-remember"
+                      />
+                      <label for="check-remember">Remember me</label>
+                    </div>
+                    <a href="/">Forgot your password?</a>
+                  </div>
+                  <button type="submit" aria-label="Login">LOGIN</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- UNABLE TO LOGIN MODAL -->
+    <aside class="unable-login-modal">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <header class="unable-login-modal-header">
+              <h1 class="visually-hidden">UNABLE TO LOGIN</h1>
+
+              <button type="button" aria-label="Close">
+                <i class="" aria-hidden="true"></i>
+              </button>
+            </header>
+
+            <div class="unable-login-modal-content">
+              <div class="unable-login-modal-content-icon" aria-hidden="true">
+                <i class=""></i>
+              </div>
+              <strong>UNABLE TO LOGIN</strong>
+              <p>
+                The User ID or Password you entered is incorrect.Please click
+                'OK' to re enter your ID and Password.
+              </p>
+
+              <!-- MOBILE -->
+              <button type="button" aria-label="yes">YES</button>
+              <!-- PC -->
+              <button type="button" aria-label="ok">OK</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- RESET PASSWORD MODAL -->
+    <aside class="reset-password-modal">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <header class="reset-password-modal-header">
+              <h1 class="visually-hidden">RESET PASSWORD</h1>
+
+              <button type="button" aria-label="Close">
+                <i class="" aria-hidden="true"></i>
+              </button>
+            </header>
+
+            <div class="reset-password-modal-content">
+              <div class="reset-password-modal-content-icon" aria-hidden="true">
+                <i class=""></i>
+              </div>
+              <strong>RESET PASSWORD</strong>
+              <p>
+                Your login information has been sent to you using the email
+                address on file.
+              </p>
+
+              <button type="button" aria-label="go to login">
+                GO TO LOGIN
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- RESET PASSWORD CONFIRM MODAL -->
+    <aside class="reset-password-confirm-modal">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <header class="reset-password-confirm-modal-header">
+              <h1 class="visually-hidden">RESET PASSWORD CONFIRM</h1>
+
+              <button type="button" aria-label="Close">
+                <i class="" aria-hidden="true"></i>
+              </button>
+            </header>
+
+            <div class="reset-password-confirm-modal-content">
+              <div
+                class="reset-password-confirm-modal-content-icon"
+                aria-hidden="true"
+              >
+                <i class=""></i>
+              </div>
+              <p>Are Sure to reset your Password?</p>
+
+              <button type="button" aria-label="no">NO</button>
+              <button type="button" aria-label="yes">YES</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- LOGOUT CONFIRM MODAL -->
+    <aside class="logout-confirm-modal">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <header class="logout-confirm-modal-header">
+              <h1 class="visually-hidden">LOGOUT CONFIRM</h1>
+
+              <button type="button" aria-label="Close">
+                <i class="" aria-hidden="true"></i>
+              </button>
+            </header>
+
+            <div class="logout-confirm-modal-content">
+              <div class="logout-confirm-modal-content-icon" aria-hidden="true">
+                <i class=""></i>
+              </div>
+              <p>Are you sure you want to <strong>LOGOUT?</strong></p>
+
+              <button type="button" aria-label="no">NO</button>
+              <button type="button" aria-label="yes">YES</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </body>
+</html>
