@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>COMENTO - UI Markup</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="_reset.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -141,116 +148,150 @@
     <main class="main">
       <!-- SECTION: MAIN SEARCH AREA  -->
       <div class="main_search_area">
-        <div class="main_search_area_header">
-          <h2><span>Know your</span>Product / Serial Number?</h2>
-        </div>
-
-        <form action="/" method="get">
-          <div class="main_search_area_content">
-            <div class="main_search_form_wrap">
-              <label class="visually_hidden">Search type</label>
-              <select>
-                <option>Product</option>
-              </select>
-
-              <label class="visually_hidden">Search word</label>
-              <input type="text" placeholder="Enter your model number" />
-
-              <button type="submit">
-                <span class="visually_hidden">Search</span>
-                <i class=""></i>
-              </button>
-            </div>
+        <div class="main_search_area_wrap">
+          <div class="main_search_area_header">
+            <h2>
+              <span class="txt_thin">Know your</span><br />Product / Serial
+              Number?
+            </h2>
           </div>
-        </form>
 
-        <div class="main_search_area_bread sm_only">
-          <span>Home</span>
+          <form class="search_form" action="/" method="get">
+            <div class="main_search_area_content">
+              <div class="main_search_form_wrap">
+                <label class="visually_hidden">Search type</label>
+                <select>
+                  <option>Product</option>
+                </select>
+
+                <label class="visually_hidden">Search word</label>
+                <input type="text" placeholder="Enter your model number" />
+
+                <button class="ic_common ic_search" type="submit">
+                  <span class="visually_hidden">Search</span>
+                </button>
+              </div>
+            </div>
+          </form>
+
+          <div class="main_search_area_bread">
+            <span>Home</span>
+          </div>
         </div>
       </div>
 
       <!-- SECTION: PRODUCT CATEGORY -->
       <section class="product_category">
-        <header class="product_category_header">
-          <h2>PRODUCT <span>CATEGORY</span></h2>
-          <p>
-            Start your product knowledge discovery by selecting it's category
+        <header class="product_category_header com_header">
+          <h2 class="com_header_title">
+            PRODUCT <span class="txt_thin">CATEGORY</span>
+          </h2>
+          <p class="com_header_sub_title">
+            Start your product knowledge discovery<br />
+            by selecting it's category
           </p>
         </header>
 
         <div class="product_category_content">
           <ul class="product_category_list">
             <li class="product_category_item">
-              <div>
-                <img src="/" alt="RANGES Image" />
+              <a href="/">
+                <img src="/images/category/ranges.png" alt="RANGES Image" />
                 <span>RANGES</span>
-              </div>
+              </a>
             </li>
             <li class="product_category_item">
-              <div>
-                <img src="/" alt="COOKTOPS Image" />
+              <a href="/">
+                <img src="/images/category/cooktops.png" alt="COOKTOPS Image" />
                 <span>COOKTOPS</span>
-              </div>
+              </a>
             </li>
             <li class="product_category_item">
-              <div>
-                <img src="/" alt="WALL OVENS Image" />
+              <a href="/">
+                <img
+                  src="/images/category/wall_ovens.png"
+                  alt="WALL OVENS Image"
+                />
                 <span>WALL OVENS</span>
-              </div>
+              </a>
             </li>
             <li class="product_category_item">
-              <div>
-                <img src="/" alt="VENTILATION Image" />
+              <a href="/">
+                <img
+                  src="/images/category/ventilation.png"
+                  alt="VENTILATION Image"
+                />
                 <span>VENTILATION</span>
-              </div>
+              </a>
             </li>
             <li class="product_category_item">
-              <div>
-                <img src="/" alt="MICROWAVES Image" />
+              <a href="/">
+                <img
+                  src="/images/category/microwaves.png"
+                  alt="MICROWAVES Image"
+                />
                 <span>MICROWAVES</span>
-              </div>
+              </a>
             </li>
             <li class="product_category_item">
-              <div>
-                <img src="/" alt="WARMING DRAWER Image" />
+              <a href="/">
+                <img
+                  src="/images/category/warming_drawer.png"
+                  alt="WARMING DRAWER Image"
+                />
                 <span>WARMING DRAWER</span>
-              </div>
+              </a>
             </li>
             <li class="product_category_item">
-              <div>
-                <img src="/" alt="OUTDOOR Image" />
+              <a href="/">
+                <img src="/images/category/outdoor.png" alt="OUTDOOR Image" />
                 <span>OUTDOOR</span>
-              </div>
+              </a>
             </li>
             <li class="product_category_item">
-              <div>
-                <img src="/" alt="REFRIGERATION Image" />
+              <a href="/">
+                <img
+                  src="/images/category/refrigeration.png"
+                  alt="REFRIGERATION Image"
+                />
                 <span>REFRIGERATION</span>
-              </div>
+              </a>
             </li>
             <li class="product_category_item">
-              <div>
-                <img src="/" alt="WINE & BEVERAGE Image" />
+              <a href="/">
+                <img
+                  src="/images/category/wine_beverage.png"
+                  alt="WINE & BEVERAGE Image"
+                />
                 <span>WINE &amp; BEVERAGE</span>
-              </div>
+              </a>
             </li>
             <li class="product_category_item">
-              <div>
-                <img src="/" alt="DISHWASHERS Image" />
+              <a href="/">
+                <img
+                  src="/images/category/dishwashers.png"
+                  alt="DISHWASHERS Image"
+                />
                 <span>DISHWASHERS</span>
-              </div>
+              </a>
             </li>
             <li class="product_category_item">
-              <div>
-                <img src="/" alt="ACCESSORIES Image" />
+              <a href="/">
+                <img
+                  src="/images/category/accessories.png"
+                  alt="ACCESSORIES Image"
+                />
                 <span>ACCESSORIES</span>
-              </div>
+              </a>
             </li>
             <li class="product_category_item">
-              <div>
-                <img src="/" alt="COFFEE SYSTEMS Image" />
+              <a href="/">
+                <img
+                  src="/images/category/coffee_systems.png"
+                  alt="COFFEE SYSTEMS Image"
+                />
                 <span>COFFEE SYSTEMS</span>
-              </div>
+              </a>
             </li>
           </ul>
         </div>
@@ -258,48 +299,63 @@
 
       <!-- SECTION: TOPICS -->
       <section class="topics">
-        <header class="topics_header">
-          <h2>TOPICS</h2>
-          <p>You can access knowledge detail by knowledge content type</p>
+        <header class="topics_header com_header">
+          <h2 class="com_header_title">TOPICS</h2>
+          <p class="com_header_sub_title">
+            You can access knowledge detail<br />
+            by knowledge content type
+          </p>
         </header>
 
         <div class="topics_content">
           <ul class="topics_list">
             <li class="topics_item">
-              <div>
-                <img src="/" alt="ERROR CODES Image" />
+              <a href="/">
+                <img
+                  src="/images/topics/error_codes.png"
+                  alt="ERROR CODES Image"
+                />
                 <span>ERROR CODES</span>
-              </div>
+              </a>
             </li>
             <li class="topics_item">
-              <div>
-                <img src="/" alt="SERVICE GUIDE Image" />
+              <a href="/">
+                <img
+                  src="/images/topics/service_guide.png"
+                  alt="SERVICE GUIDE Image"
+                />
                 <span>SERVICE GUIDE</span>
-              </div>
+              </a>
             </li>
             <li class="topics_item">
-              <div>
-                <img src="/" alt="PARTS CATALOG Image" />
+              <a href="/">
+                <img
+                  src="/images/topics/parts_catalog.png"
+                  alt="PARTS CATALOG Image"
+                />
                 <span>PARTS CATALOG</span>
-              </div>
+              </a>
             </li>
             <li class="topics_item">
-              <div>
-                <img src="/" alt="SYMPTOMS Image" />
+              <a href="/">
+                <img src="/images/topics/symptoms.png" alt="SYMPTOMS Image" />
                 <span>SYMPTOMS</span>
-              </div>
+              </a>
             </li>
             <li class="topics_item">
-              <div>
-                <img src="/" alt="PRODUCT INFO Image" />
+              <a href="/">
+                <img
+                  src="/images/topics/product_info.png"
+                  alt="PRODUCT INFO Image"
+                />
                 <span>PRODUCT INFO</span>
-              </div>
+              </a>
             </li>
             <li class="topics_item">
-              <div>
-                <img src="/" alt="FAQ Image" />
+              <a href="/">
+                <img src="/images/topics/faq.png" alt="FAQ Image" />
                 <span>FAQ</span>
-              </div>
+              </a>
             </li>
           </ul>
         </div>
@@ -307,108 +363,134 @@
 
       <!-- SECTION: RECENT SEARCHED -->
       <section class="recent_searched">
-        <header class="recent_searched_header">
-          <h2><span>RECENT</span> SEARCHED</h2>
-          <p>You can access knowledge detail by knowledge content type</p>
+        <header class="recent_searched_header com_header">
+          <h2 class="com_header_title">
+            <span class="txt_thin">RECENT</span> SEARCHED
+          </h2>
         </header>
 
         <div class="recent_searched_content">
-          <ul class="recent_searched_list">
-            <li class="recent_searched_item">
-              <div>
-                <img src="/" alt="RF22N9781SG/AA Image" />
-                <p>
-                  5.8 cu. ft. 30" Gas Chef Collection Pro Range with Dual
-                  Convection
-                </p>
-                <div>
+          <div class="recent_searched_content_wrap">
+            <ul class="recent_searched_list">
+              <li class="recent_searched_item is_active">
+                <img
+                  src="/images/category/wall_ovens.png"
+                  alt="RF22N9781SG/AA Image"
+                />
+                <div class="recent_searched_item_desc">
+                  <p>
+                    22 cu. ft. Counter Depth 4-Door Flex™ with 21.5 in.
+                    Connected Touch Screen Family Hub™ Refrigerator
+                  </p>
                   <a href="/">
                     <span>RF22N9781SG/AA</span>
                   </a>
                 </div>
-              </div>
-            </li>
-            <li class="recent_searched_item">
-              <div>
-                <img src="/" alt="NX58M9960PS/AA Image" />
-                <p>
-                  5.8 cu. ft. 30" Gas Chef Collection Pro Range with Dual
-                  Convection
-                </p>
-                <div>
+              </li>
+
+              <!-- <li class="recent_searched_item">
+                <img
+                  src="/images/category/microwaves.png"
+                  alt="NX58M9960PS/AA Image"
+                />
+                <div class="recent_searched_item_desc">
+                  <p>
+                    5.8 cu. ft. 30" Gas Chef Collection Pro Range with Dual
+                    Convection
+                  </p>
                   <a href="/">
                     <span>NX58M9960PS/AA</span>
                   </a>
                 </div>
-              </div>
-            </li>
-            <li class="recent_searched_item">
-              <div>
-                <img src="/" alt="NV51M9770SM/AA Image" />
-                <p>30" Chef Collection Single Wall Oven with Flex Duo™</p>
-                <div>
+              </li>
+
+              <li class="recent_searched_item">
+                <img
+                  src="/images/category/accessories.png"
+                  alt="NV51M9770SM/AA Image"
+                />
+                <div class="recent_searched_item_desc">
+                  <p>30" Chef Collection Single Wall Oven with Flex Duo™</p>
                   <a href="/">
                     <span>NV51M9770SM/AA</span>
                   </a>
                 </div>
-              </div>
-            </li>
-            <li class="recent_searched_item">
-              <div>
-                <img src="/" alt="RH29H9000SR/AA Image" />
-                <p>
-                  29 cu. ft. Side-by-Side Food ShowCase Refrigerator with Metal
-                  Cooling
-                </p>
-                <div>
+              </li>
+
+              <li class="recent_searched_item">
+                <img
+                  src="/images/category/cooktops.png"
+                  alt="RH29H9000SR/AA Image"
+                />
+                <div class="recent_searched_item_desc">
+                  <p>
+                    29 cu. ft. Side-by-Side Food ShowCase Refrigerator with
+                    Metal Cooling
+                  </p>
                   <a href="/">
                     <span>RH29H9000SR/AA</span>
                   </a>
                 </div>
-              </div>
-            </li>
-            <li class="recent_searched_item">
-              <div>
-                <img src="/" alt="DVG55M9600V/A3 Image" />
-                <p></p>
-                <div>
+              </li>
+
+              <li class="recent_searched_item">
+                <img
+                  src="/images/category/ventilation.png"
+                  alt="DVG55M9600V/A3 Image"
+                />
+                <div class="recent_searched_item_desc">
+                  <p>DV9600 7.5 cu. ft. FlexDry™ Gas Dryer</p>
                   <a href="/">
                     <span>DVG55M9600V/A3</span>
                   </a>
                 </div>
-              </div>
-            </li>
-            <li class="recent_searched_item">
-              <div>
-                <img src="/" alt="WA50M7450AW/A4 Image" />
-                <p>WA7450 5.0 cu. ft. Top Load Washer</p>
-                <div>
+              </li>
+
+              <li class="recent_searched_item">
+                <img
+                  src="/images/category/ranges.png"
+                  alt="WA50M7450AW/A4 Image"
+                />
+                <div class="recent_searched_item_desc">
+                  <p>WA7450 5.0 cu. ft. Top Load Washer</p>
                   <a href="/">
                     <span>WA50M7450AW/A4</span>
                   </a>
                 </div>
-              </div>
-            </li>
-          </ul>
+              </li> -->
+            </ul>
+
+            <button class="ic_arrow left_btn" type="button">
+              <span class="visually_hidden">Left</span>
+              <img src="/images/icons/left_arrow.png" alt="Left button" />
+            </button>
+            <button class="ic_arrow right_btn" type="button">
+              <span class="visually_hidden">Right</span>
+              <img src="/images/icons/right_arrow.png" alt="Right button" />
+            </button>
+          </div>
         </div>
       </section>
 
       <!-- SECTION: NEWS LETTER -->
       <section class="news_letter">
-        <header class="news_letter_header">
-          <h2><span>Exceptional 24/7</span> Customer Care</h2>
-          <p>
+        <header class="news_letter_header com_header">
+          <div class="news_letter_bg"></div>
+          <h2 class="com_header_title">
+            <span class="txt_thin">Exceptional 24/7</span><br />
+            Customer Care
+          </h2>
+          <p class="news_letter_sub_title">
             Our dedicated support team is ready to take your call 24/7. We are
             committed to ensuring you have an exceptional customer experience.
           </p>
         </header>
 
-        <div class="news_letter_content">
-          <!-- MOBILE -->
-          <a class="sm_only" href="/">
-            <span>CONTACT US</span>
-          </a>
-        </div>
+        <!-- <div class="news_letter_content"> -->
+        <a class="news_letter_content" href="/">
+          <span>CONTACT US</span>
+        </a>
+        <!-- </div> -->
       </section>
     </main>
 
@@ -418,7 +500,7 @@
       <section class="footer_left">
         <div class="footer_left_content">
           <div class="footer_left_content_product_support">
-            <strong>Product Support</strong>
+            <strong>PRODUCT SUPPORT</strong>
             <ul>
               <li>
                 <a href="/">Wall Ovens</a>
