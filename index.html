@@ -573,7 +573,6 @@
             <input type="text" name="search-word" placeholder="Search" />
             <button type="submit">
               <span class="visually_hidden">Search</span>
-              <i class=""></i>
             </button>
           </form>
 
@@ -594,20 +593,27 @@
               </li>
               <li class="footer_right_info_item">
                 <a href="/">FOLLOW US</a>
-
-                <!-- SNS -->
-                <!-- 이미지 스프라이트 기법 사용하기 -->
-                <div class="sns-group">
-                  <a href="/" class="icon-facebook" target="_blank">Facebook</a>
-                  <a href="/" class="icon-twitter" target="_blank">Twitter</a>
-                  <a href="/" class="icon-youtube" target="_blank">Youtube</a>
-                  <a href="/" class="icon-pinterest" target="_blank">
-                    Pinterest
-                  </a>
-                  <a href="/" class="icon-houzz" target="_blank">Houzz</a>
-                </div>
               </li>
             </ul>
+
+            <!-- SNS -->
+            <div class="sns_group">
+              <a href="/" class="sns_icon icon_facebook" target="_blank">
+                <span class="visually_hidden">Facebook</span>
+              </a>
+              <a href="/" class="sns_icon icon_twitter" target="_blank">
+                <span class="visually_hidden">Twitter</span>
+              </a>
+              <a href="/" class="sns_icon icon_youtube" target="_blank">
+                <span class="visually_hidden">Youtube</span>
+              </a>
+              <a href="/" class="sns_icon icon_pinterest" target="_blank">
+                <span class="visually_hidden">Pinterest</span>
+              </a>
+              <a href="/" class="sns_icon icon_houzz" target="_blank">
+                <span class="visually_hidden">Houzz</span>
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -621,18 +627,21 @@
 
       <form action="/" method="get">
         <label class="visually_hidden">Search word</label>
-        <input class="search_input" type="text" name="search_word" />
+        <input
+          class="search_input"
+          type="text"
+          name="search_word"
+          placeholder="Search"
+        />
 
-        <button type="submit">
+        <button type="submit" class="ic_common ic_search">
           <span class="visually_hidden">Search</span>
-          <i class=""></i>
         </button>
       </form>
 
       <!-- 닫기 버튼 -->
-      <button type="button">
+      <button type="button" class="ic_common ic_close">
         <span class="visually_hidden">Close</span>
-        <i class="" aria-hidden="true"></i>
       </button>
     </div>
 
@@ -652,7 +661,6 @@
               type="button"
             >
               <span>PRODUCT SUPPORT</span>
-              <i class="" aria-hidden="true"></i>
             </button>
 
             <div class="drawer_menu_content">
@@ -751,7 +759,6 @@
         <img src="/" alt="logo" />
         <button type="button">
           <span class="visually_hidden">Close</span>
-          <i class="" aria-hidden="true"></i>
         </button>
       </header>
 
@@ -762,12 +769,10 @@
 
         <form action="/" method="post">
           <div class="input_id">
-            <i class="" aria-hidden="true"></i>
             <label class="visually_hidden">User ID</label>
             <input type="text" name="user_id" placeholder="USER ID" />
           </div>
           <div class="input_pw">
-            <i class="" aria-hidden="true"></i>
             <label class="visually_hidden">Password</label>
             <input
               type="password"
@@ -799,14 +804,11 @@
 
         <button type="button">
           <span class="visually_hidden">Close</span>
-          <i class="" aria-hidden="true"></i>
         </button>
       </header>
 
       <div class="unable_login_modal_content">
-        <div class="unable_login_modal_content_icon" aria-hidden="true">
-          <i class=""></i>
-        </div>
+        <div class="unable_login_modal_content_icon" aria-hidden="true"></div>
         <strong>UNABLE TO LOGIN</strong>
         <p>
           The User ID or Password you entered is incorrect. Please click 'OK' to
@@ -824,7 +826,6 @@
 
         <button type="button">
           <span class="visually_hidden">Close</span>
-          <i class="" aria-hidden="true"></i>
         </button>
       </header>
 
@@ -849,7 +850,6 @@
 
         <button type="button">
           <span class="visually_hidden">Close</span>
-          <i class="" aria-hidden="true"></i>
         </button>
       </header>
 
@@ -857,9 +857,7 @@
         <div
           class="reset_password_confirm-modal-content-icon"
           aria-hidden="true"
-        >
-          <i class=""></i>
-        </div>
+        ></div>
         <p>Are Sure to reset your Password?</p>
 
         <button type="button">NO</button>
@@ -874,14 +872,11 @@
 
         <button type="button">
           <span class="visually_hidden">Close</span>
-          <i class="" aria-hidden="true"></i>
         </button>
       </header>
 
       <div class="logout_confirm_modal_content">
-        <div class="logout_confirm_modal_content_icon" aria-hidden="true">
-          <i class=""></i>
-        </div>
+        <div class="logout_confirm_modal_content_icon" aria-hidden="true"></div>
         <p>Are you sure you want to <strong>LOGOUT?</strong></p>
 
         <button type="button">NO</button>
