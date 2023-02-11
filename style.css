@@ -692,6 +692,10 @@ input {
   transform: translate(-50%, 0%);
 }
 
+.login_modal.is_active {
+  display: block;
+}
+
 .login_modal_wrap {
   padding: 0 30px;
 }
@@ -758,10 +762,6 @@ input {
   background-size: contain;
 }
 
-.input_id input {
-  /* margin-left: 9px; */
-}
-
 .ic_pwd {
   background: url('/images/icons/hold.png') no-repeat;
   background-size: contain;
@@ -800,6 +800,86 @@ input {
   font-size: 14px;
   font-weight: 500;
   color: #fff;
+  letter-spacing: -0.16px;
+}
+
+/* UNABLE TO LOGIN MODAL */
+.unable_login_modal {
+  display: none;
+  position: absolute;
+  top: 78px;
+  left: 50%;
+  width: 223px;
+  padding: 0 25px;
+  background-color: #282828;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  transform: translate(-50%, 0%);
+}
+
+.unable_login_modal.is_active {
+  display: block;
+}
+
+.unable_login_modal header button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 12px;
+  height: 12px;
+  margin: 20px;
+  background: url('/images/icons/close.png') no-repeat;
+  background-size: contain;
+}
+
+.unable_cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 59px;
+}
+
+.unable_cont_icon {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 23px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+.unable_cont_icon::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 18px;
+  height: 23px;
+  transform: translate(-50%, -50%);
+  background: url('/images/icons/hold.png') no-repeat;
+}
+
+.unable_cont strong {
+  font-size: 17px;
+  letter-spacing: -0.16px;
+}
+
+.unable_cont p {
+  margin-bottom: 26px;
+  font-size: 12px;
+  font-weight: 100;
+  text-align: center;
+  line-height: 14px;
+  letter-spacing: -0.8px;
+}
+
+.unable_cont button {
+  width: 75px;
+  height: 28px;
+  margin-bottom: 25px;
+  font-size: 11px;
+  background-color: #fff;
   letter-spacing: -0.16px;
 }
 
