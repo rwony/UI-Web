@@ -210,8 +210,9 @@ input {
   left: 0;
   width: 100%;
   height: 26px;
-  margin: 0 15px;
+  padding: 0 15px;
   background-color: rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
 }
 
 .srch_area_bread span {
@@ -623,43 +624,183 @@ input {
 
 /* SEARCH MODAL */
 .search_modal {
+  display: none;
+}
+
+.search_modal.is_active {
+  display: block;
+}
+
+.search_modal_wrap {
   position: absolute;
   top: 0;
   left: 0;
   display: flex;
+  align-items: center;
   width: 100%;
-  padding: 0 30px;
+  height: 47px;
+  padding: 0 15px;
   background-color: #191919;
   color: #8b8b8b;
+  box-sizing: border-box;
 }
 
-.search_modal form {
+.search_modal_wrap form {
+  display: flex;
   position: relative;
-}
-
-.search_modal form input {
   width: 100%;
-  padding: 8px 18px;
-  font-size: 24px;
-  border: 1px solid #8b8b8b;
 }
 
-.search_modal form .ic_search {
+.search_modal_wrap form input {
+  flex-grow: 1;
+  width: 100%;
+  padding: 6px 24px 6px 6px;
+  font-size: 12px;
+  border: 1px solid #8b8b8b;
+  border-radius: 4px;
+}
+
+.search_modal_wrap .ic_search {
   position: absolute;
   top: 50%;
-  right: 0;
-  width: 25px;
-  height: 25px;
+  right: 6px;
+  width: 13px;
+  height: 13px;
   background: url('/images/icons/glasses.png') no-repeat;
   background-size: cover;
   transform: translate(0, -50%);
 }
 
-.search_modal .ic_close {
-  width: 25px;
-  height: 25px;
+.search_modal_wrap .ic_close {
+  width: 13px;
+  height: 13px;
+  margin-left: 14px;
   background: url('/images/icons/close.png') no-repeat;
   background-size: cover;
+}
+
+/* LOGIN MODAL */
+.login_modal {
+  display: none;
+  position: fixed;
+  top: 78px;
+  left: 50%;
+  width: 300px;
+  background-color: #282828;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  transform: translate(-50%, 0%);
+}
+
+.login_modal_wrap {
+  padding: 0 30px;
+}
+
+.login_modal header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 28px;
+  margin-bottom: 90px;
+}
+
+.login_modal strong {
+  font-size: 21px;
+  font-style: italic;
+  letter-spacing: -0.8px;
+}
+
+.login_modal header button {
+  width: 12px;
+  height: 12px;
+  background: url('/images/icons/close.png') no-repeat;
+  background-size: contain;
+}
+
+.login_modal_cont h3 {
+  font-size: 19px;
+  margin-bottom: 92px;
+}
+
+.login_modal_cont h3 span {
+  font-weight: 100;
+}
+
+.login_modal_cont input {
+  color: #fff;
+}
+
+.input_id,
+.input_pw {
+  display: flex;
+  align-items: center;
+  margin-bottom: 29px;
+  padding-bottom: 9px;
+  border-bottom: 1px solid #474747;
+}
+
+.input_id input,
+.input_pw input {
+  width: 100%;
+  padding: 0 8px;
+}
+
+.ic_user,
+.ic_pwd {
+  display: block;
+  width: 18px;
+  height: 13px;
+  background-position: 5px;
+}
+
+.ic_user {
+  background: url('/images/icons/user.png') no-repeat;
+  background-size: contain;
+}
+
+.input_id input {
+  /* margin-left: 9px; */
+}
+
+.ic_pwd {
+  background: url('/images/icons/hold.png') no-repeat;
+  background-size: contain;
+}
+
+.input_check {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 29px;
+}
+
+.check_remember {
+  display: flex;
+}
+
+.input_check label {
+  font-size: 11px;
+  color: #c2c2c2;
+}
+
+.input_check input {
+  margin-right: 5px;
+}
+
+.input_check a {
+  font-size: 11px;
+  color: #8a8a8a;
+  letter-spacing: -0.16px;
+}
+
+.login_modal_cont button {
+  width: 100%;
+  height: 39px;
+  margin-bottom: 37px;
+  background-color: #000;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: -0.16px;
 }
 
 /* @media screen and (min-width: 813px) {

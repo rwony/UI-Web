@@ -658,28 +658,30 @@
 
     <!-- SEARCH MODAL -->
     <div class="search_modal">
-      <header class="search_modal_header">
-        <h2 class="visually_hidden">Search Form</h2>
-      </header>
+      <div class="search_modal_wrap">
+        <header class="search_modal_header">
+          <h2 class="visually_hidden">Search Form</h2>
+        </header>
 
-      <form action="/" method="get">
-        <label class="visually_hidden">Search word</label>
-        <input
-          class="search_input"
-          type="text"
-          name="search_word"
-          placeholder="Search"
-        />
+        <form action="/" method="get">
+          <label class="visually_hidden">Search word</label>
+          <input
+            class="search_input"
+            type="text"
+            name="search_word"
+            placeholder="Search"
+          />
 
-        <button type="submit" class="ic_common ic_search">
-          <span class="visually_hidden">Search</span>
+          <button type="submit" class="ic_common ic_search">
+            <span class="visually_hidden">Search</span>
+          </button>
+        </form>
+
+        <!-- 닫기 버튼 -->
+        <button type="button" class="ic_common ic_close">
+          <span class="visually_hidden">Close</span>
         </button>
-      </form>
-
-      <!-- 닫기 버튼 -->
-      <button type="button" class="ic_common ic_close">
-        <span class="visually_hidden">Close</span>
-      </button>
+      </div>
     </div>
     -->
 
@@ -790,48 +792,54 @@
     </div> -->
 
     <!-- LOGIN MODAL -->
-    <div class="login-modal">
-      <header class="login_modal_header">
-        <h2 class="visually_hidden">Login</h2>
+    <div class="login_modal">
+      <div class="login_modal_wrap">
+        <header>
+          <h2 class="visually_hidden">Login</h2>
 
-        <img src="/" alt="logo" />
-        <button type="button">
-          <span class="visually_hidden">Close</span>
-        </button>
-      </header>
+          <strong>LOGO</strong>
+          <button type="button">
+            <span class="visually_hidden">Close</span>
+          </button>
+        </header>
 
-      <div class="login_modal_content">
-        <div class="login_modal_content_text">
-          <h3><span>Service Network for</span> Dacor Information</h3>
-        </div>
+        <div class="login_modal_cont">
+          <h3><span>SERVICE NETWORK FOR</span> DACOR INFORMATION</h3>
 
-        <form action="/" method="post">
-          <div class="input_id">
-            <label class="visually_hidden">User ID</label>
-            <input type="text" name="user_id" placeholder="USER ID" />
-          </div>
-          <div class="input_pw">
-            <label class="visually_hidden">Password</label>
-            <input
-              type="password"
-              name="user_password"
-              placeholder="PASSWORD"
-            />
-          </div>
-          <div class="input_check">
-            <div class="check_remember">
-              <label class="visually_hidden">Remember user check</label>
-              <input
-                type="checkbox"
-                name="check_remember"
-                id="check_remember"
-              />
-              <label for="check_remember">Remember me</label>
+          <form action="/" method="post">
+            <div class="input_id">
+              <label class="visually_hidden">User ID</label>
+              <span class="ic_user">
+                <span class="visually_hidden">ID</span>
+              </span>
+              <input type="text" name="user_id" placeholder="USER ID" />
             </div>
-            <a href="/">Forgot your password?</a>
-          </div>
-          <button type="submit">LOGIN</button>
-        </form>
+            <div class="input_pw">
+              <label class="visually_hidden">Password</label>
+              <span class="ic_pwd">
+                <span class="visually_hidden">PASSWORD</span>
+              </span>
+              <input
+                type="password"
+                name="user_password"
+                placeholder="PASSWORD"
+              />
+            </div>
+            <div class="input_check">
+              <div class="check_remember">
+                <label class="visually_hidden">Remember user check</label>
+                <input
+                  type="checkbox"
+                  name="check_remember"
+                  id="check_remember"
+                />
+                <label for="check_remember">Remember me</label>
+              </div>
+              <a href="/">Forgot your password?</a>
+            </div>
+            <button type="submit">LOGIN</button>
+          </form>
+        </div>
       </div>
     </div>
 
