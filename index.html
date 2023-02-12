@@ -685,59 +685,60 @@
     </div>
 
     <!-- SIDEBAR -->
-    <!-- <div class="sidebar">
-      <header class="sidebar_header">
+    <div class="sidebar">
+      <header>
         <h2 class="visually_hidden">Side bar</h2>
       </header>
 
       <nav class="sidebar_nav">
         <h2 class="visually_hidden">Menu</h2>
 
-        <div class="sidebar_nav_menu">
+        <div class="nav_menu">
           <div class="drawer_menu">
             <button
               class="drawer_menu_button drawer_menu_title is_product_support"
               type="button"
             >
               <span>PRODUCT SUPPORT</span>
+              <span class="drawer_icon"></span>
             </button>
 
-            <div class="drawer_menu_content">
-              <ul class="drawer_menu_content_list">
-                <li class="drawer_menu_content_item">
+            <div class="drawer_menu_cont">
+              <ul>
+                <li>
                   <a href="/">Ranges</a>
                 </li>
-                <li class="drawer_menu_content_item">
+                <li>
                   <a href="/">Cooktops</a>
                 </li>
-                <li class="drawer_menu_content_item">
+                <li>
                   <a href="/">Wall Ovens</a>
                 </li>
-                <li class="drawer_menu_content_item">
+                <li>
                   <a href="/">Ventilation</a>
                 </li>
-                <li class="drawer_menu_content_item">
+                <li>
                   <a href="/">Microwaves</a>
                 </li>
-                <li class="drawer_menu_content_item">
+                <li>
                   <a href="/">Warming Drawers</a>
                 </li>
-                <li class="drawer_menu_content_item">
+                <li>
                   <a href="/">Outdoor</a>
                 </li>
-                <li class="drawer_menu_content_item">
+                <li>
                   <a href="/">Refrigeration</a>
                 </li>
-                <li class="drawer_menu_content_item">
+                <li>
                   <a href="/">Wine &amp; Beverage</a>
                 </li>
-                <li class="drawer_menu_content_item">
+                <li>
                   <a href="/">Dishwashers</a>
                 </li>
-                <li class="drawer_menu_content_item">
+                <li>
                   <a href="/">Accessories</a>
                 </li>
-                <li class="drawer_menu_content_item">
+                <li>
                   <a href="/">Coffee Systems</a>
                 </li>
               </ul>
@@ -745,25 +746,25 @@
           </div>
 
           <div class="drawer_menu">
-            <div class="drawer_menu_title">
+            <div class="drawer_menu_tit">
               <a href="/"><span>TOPICS</span></a>
             </div>
           </div>
 
           <div class="drawer_menu">
-            <div class="drawer_menu_title">
+            <div class="drawer_menu_tit">
               <a href="/"><span>TRAINING</span></a>
             </div>
           </div>
 
           <div class="drawer_menu">
-            <div class="drawer_menu_title">
+            <div class="drawer_menu_tit">
               <a href="/"><span>NEWSLETTERS</span></a>
             </div>
           </div>
 
           <div class="drawer_menu">
-            <div class="drawer_menu_title">
+            <div class="drawer_menu_tit">
               <a href="/"><span>ADMIN</span></a>
             </div>
           </div>
@@ -771,24 +772,24 @@
 
         <div class="sidebar_nav_info">
           <div class="drawer_menu">
-            <div class="drawer_menu_title">
+            <div class="drawer_menu_tit">
               <a href="/"><span>TERMS OF USE</span></a>
             </div>
           </div>
           <div class="drawer_menu">
-            <div class="drawer_menu_title">
+            <div class="drawer_menu_tit">
               <a href="/"><span>CONTACT US</span></a>
             </div>
           </div>
           <div class="drawer_menu">
-            <div class="drawer_menu_title">
-              <button class="" type="button">LOGIN</button>
-              <button class="" type="button">LOGOUT</button>
+            <div class="drawer_menu_tit">
+              <!-- <button class="log_btn" type="button">LOGIN</button> -->
+              <button class="log_btn" type="button">LOGOUT</button>
             </div>
           </div>
         </div>
       </nav>
-    </div> -->
+    </div>
 
     <!-- LOGIN MODAL -->
     <div class="login_modal">
@@ -866,7 +867,7 @@
 
     <!-- RESET PASSWORD MODAL -->
     <div class="reset_password_modal">
-      <header class="reset_password_modal_header">
+      <header>
         <h2 class="visually_hidden">RESET PASSWORD</h2>
 
         <button type="button">
@@ -874,10 +875,8 @@
         </button>
       </header>
 
-      <div class="reset_password_modal_content">
-        <div class="reset_password_modal_content_icon" aria-hidden="true">
-          <i class=""></i>
-        </div>
+      <div class="reset_pwd_cont">
+        <div class="reset_pwd_cont_icon" aria-hidden="true"></div>
         <strong>RESET PASSWORD</strong>
         <p>
           Your login information has been sent to you using the email address on
@@ -889,8 +888,8 @@
     </div>
 
     <!-- RESET PASSWORD CONFIRM MODAL -->
-    <div class="reset_password_confirm_modal">
-      <header class="reset_password_confirm_modal_header">
+    <div class="reset_pwd_cfm_modal">
+      <header>
         <h2 class="visually_hidden">RESET PASSWORD CONFIRM</h2>
 
         <button type="button">
@@ -898,21 +897,20 @@
         </button>
       </header>
 
-      <div class="reset_password_confirm-modal-content">
-        <div
-          class="reset_password_confirm-modal-content-icon"
-          aria-hidden="true"
-        ></div>
+      <div class="reset_pwd_cfm_cont">
+        <div class="reset_pwd_cfm_cont_icon" aria-hidden="true"></div>
         <p>Are Sure to reset your Password?</p>
 
-        <button type="button">NO</button>
-        <button type="button">YES</button>
+        <div class="btn_group">
+          <button class="outlined_btn" type="button">NO</button>
+          <button type="button">YES</button>
+        </div>
       </div>
     </div>
 
     <!-- LOGOUT CONFIRM MODAL -->
-    <div class="logout_confirm_modal">
-      <header class="logout_confirm_modal_header">
+    <div class="logout_cfm_modal">
+      <header>
         <h2 class="visually_hidden">LOGOUT CONFIRM</h2>
 
         <button type="button">
@@ -920,12 +918,14 @@
         </button>
       </header>
 
-      <div class="logout_confirm_modal_content">
-        <div class="logout_confirm_modal_content_icon" aria-hidden="true"></div>
+      <div class="logout_cfm_cont">
+        <div class="logout_cfm_cont_icon" aria-hidden="true"></div>
         <p>Are you sure you want to <strong>LOGOUT?</strong></p>
 
-        <button type="button">NO</button>
-        <button type="button">YES</button>
+        <div class="btn_group">
+          <button class="outlined_btn" type="button">NO</button>
+          <button type="button">YES</button>
+        </div>
       </div>
     </div>
   </body>
