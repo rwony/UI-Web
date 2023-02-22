@@ -39,7 +39,7 @@ button {
   padding: 0 15px;
   box-sizing: border-box;
   text-align: center;
-  letter-spacing: -0.16px;
+  letter-spacing: -1px;
 }
 
 .com_hd_tit {
@@ -52,7 +52,7 @@ button {
 .com_hd_tit > span {
   font-size: 22px;
   line-height: 16px;
-  letter-spacing: -0.16px;
+  letter-spacing: -1px;
 }
 
 .com_hd_sub_tit {
@@ -60,7 +60,7 @@ button {
   margin-bottom: 28px;
   font-size: 14px;
   font-weight: 100;
-  letter-spacing: -0.16px;
+  letter-spacing: -1px;
   word-break: break-all;
 }
 
@@ -75,6 +75,7 @@ button {
 }
 
 .overlay {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -97,8 +98,7 @@ button {
   z-index: 30;
 }
 
-.header .user_info {
-  /* TODO */
+.user_info {
   display: none;
 }
 
@@ -112,7 +112,7 @@ button {
   font-size: 15px;
   font-style: italic;
   text-align: center;
-  letter-spacing: -0.16px;
+  letter-spacing: -1px;
 }
 
 .header .gnb_srch_area .ic_menu {
@@ -160,7 +160,7 @@ button {
   font-size: 27px;
   text-align: center;
   line-height: 32px;
-  letter-spacing: -0.16px;
+  letter-spacing: -1px;
   word-break: break-all;
 }
 
@@ -169,52 +169,54 @@ button {
 }
 
 .srch_area_cont {
-  margin: 0 15px;
-  padding: 9px 0;
+  position: relative;
+  display: flex;
+  margin: 0 30px;
+  padding: 9px 15px;
   border: 2px solid #fff;
   border-radius: 20px;
 }
 
 .srch_form_wrap {
-  position: relative;
-  display: flex;
-  margin: 0 15px;
+  /* position: relative;
+  display: flex; */
+  /* margin: 0 15px; */
 }
 
-.srch_form_wrap::after {
+.srch_area_cont::after {
   content: '|';
   position: absolute;
-  top: -2px;
-  left: 56px;
+  top: 7px;
+  left: 66px;
   font-size: 12px;
   margin: -2px 15px 0;
   color: #5d5d5c;
 }
 
-.srch_form_wrap select,
-.srch_form_wrap input {
+.srch_area_cont select,
+.srch_area_cont input {
   font-size: 11px;
   background-color: transparent;
-  letter-spacing: -0.16px;
+  letter-spacing: -1px;
 }
 
-.srch_form_wrap select {
+.srch_area_cont select {
   padding-right: 10px;
   color: #fff;
 }
 
-.srch_form_wrap input {
+.srch_area_cont input {
   position: relative;
   width: 100%;
-  margin-left: 10px;
-  padding: 0 20px 0 4px;
+  margin: 0 10px;
+  padding: 0 10px 0 4px;
   color: #b5b5b5;
 }
 
-.srch_form_wrap button {
+.srch_area_cont button {
   position: absolute;
   top: 50%;
-  right: 0;
+  right: 13px;
   width: 13px;
   height: 13px;
   background: url('/images/icons/glasses.png') no-repeat;
@@ -236,7 +238,7 @@ button {
 .srch_area_bread span {
   font-size: 10px;
   font-weight: 100;
-  letter-spacing: -0.016px;
+  letter-spacing: -1px;
   word-break: break-all;
 }
 
@@ -245,7 +247,7 @@ button {
   background-color: #282828;
 }
 
-.prdt_ctgr_cont ul {
+.prdt_ctgr_cont {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 0;
@@ -282,16 +284,14 @@ button {
 }
 
 .prdt_ctgr_cont li img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+  max-width: 92px;
+  max-height: 84px;
+  margin-top: -17px;
 }
 
 .prdt_ctgr_cont li p {
   position: absolute;
   bottom: 15px;
-  display: inline-block;
   width: 100%;
   margin: 0;
   padding: 0 12px;
@@ -309,7 +309,7 @@ button {
   background-color: #282828;
 }
 
-.topics_cont ul {
+.topics_cont {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 0;
@@ -339,17 +339,10 @@ button {
   padding: 50px 0;
 }
 
-.topics_cont .img_wrap {
-  width: 50px;
-  height: 50px;
-  overflow: hidden;
-}
-
 .topics_cont li img {
   display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+  max-width: 50px;
+  max-height: 50px;
 }
 
 .topics_cont li a > p {
@@ -389,7 +382,6 @@ button {
 
 .item_list_wrap ul li {
   display: flex;
-  width: 540px;
   padding: 32px 32px;
   background-color: #333333;
 }
@@ -412,7 +404,7 @@ button {
   font-weight: 100;
   line-height: 14px;
   text-align: center;
-  letter-spacing: -0.16px;
+  letter-spacing: -1px;
 }
 
 .recent_searched_item_desc a {
@@ -429,12 +421,12 @@ button {
   font-size: 12px;
   font-weight: 500;
   line-height: 14px;
-  letter-spacing: -0.16px;
+  letter-spacing: -1px;
 }
 
 .item_list_wrap img {
   display: block;
-  width: 55px;
+  max-width: 55px;
   object-fit: contain;
 }
 
@@ -508,7 +500,7 @@ button {
   padding: 8px 25px;
   border: 1px solid #fff;
   font-size: 11px;
-  letter-spacing: 0.16px;
+  letter-spacing: 1px;
 }
 
 /* FOOTER */
@@ -729,7 +721,7 @@ button {
 .login_modal strong {
   font-size: 21px;
   font-style: italic;
-  letter-spacing: -0.8px;
+  letter-spacing: -1px;
 }
 
 .login_modal header button {
@@ -807,7 +799,7 @@ button {
 .input_check a {
   font-size: 11px;
   color: #8a8a8a;
-  letter-spacing: -0.16px;
+  letter-spacing: -1px;
 }
 
 .login_modal_cont button {
@@ -818,7 +810,7 @@ button {
   font-size: 14px;
   font-weight: 500;
   color: #fff;
-  letter-spacing: -0.16px;
+  letter-spacing: -1px;
 }
 
 /* UNABLE TO LOGIN MODAL */
@@ -880,7 +872,7 @@ button {
 
 .unable_cont strong {
   font-size: 17px;
-  letter-spacing: -0.16px;
+  letter-spacing: -1px;
 }
 
 .unable_cont p {
@@ -889,7 +881,7 @@ button {
   font-weight: 100;
   text-align: center;
   line-height: 14px;
-  letter-spacing: -0.8px;
+  letter-spacing: -1px;
 }
 
 .unable_cont button {
@@ -897,7 +889,7 @@ button {
   margin-bottom: 25px;
   font-size: 11px;
   background-color: #fff;
-  letter-spacing: -0.16px;
+  letter-spacing: -1px;
 }
 
 /* RESET PASSWORD MODAL */
@@ -960,7 +952,7 @@ button {
 
 .reset_pwd_cont strong {
   font-size: 17px;
-  letter-spacing: -0.16px;
+  letter-spacing: -1px;
 }
 
 .reset_pwd_cont p {
@@ -969,7 +961,7 @@ button {
   font-weight: 100;
   text-align: center;
   line-height: 14px;
-  letter-spacing: -0.8px;
+  letter-spacing: -1px;
 }
 
 .reset_pwd_cont button {
@@ -977,7 +969,7 @@ button {
   margin-bottom: 25px;
   font-size: 11px;
   background-color: #fff;
-  letter-spacing: -0.16px;
+  letter-spacing: -1px;
 }
 
 /* RESET PASSWORD CONFIRM MODAL */
@@ -1040,7 +1032,7 @@ button {
 
 .reset_pwd_cfm_cont strong {
   font-size: 17px;
-  letter-spacing: -0.16px;
+  letter-spacing: -1px;
 }
 
 .reset_pwd_cfm_cont p {
@@ -1049,7 +1041,7 @@ button {
   font-weight: 100;
   text-align: center;
   line-height: 17px;
-  letter-spacing: -0.8px;
+  letter-spacing: -1px;
 }
 
 .btn_group {
@@ -1062,7 +1054,7 @@ button {
   margin-bottom: 25px;
   font-size: 11px;
   background-color: #fff;
-  letter-spacing: -0.16px;
+  letter-spacing: -1px;
 }
 
 .reset_pwd_cfm_cont button:first-child {
@@ -1131,7 +1123,7 @@ button {
   display: block;
   margin-top: 8px;
   font-size: 17px;
-  letter-spacing: -0.16px;
+  letter-spacing: -1px;
 }
 
 .logout_cfm_cont p {
@@ -1140,7 +1132,7 @@ button {
   font-weight: 100;
   text-align: center;
   line-height: 17px;
-  letter-spacing: -0.8px;
+  letter-spacing: -1px;
 }
 
 .btn_group {
@@ -1153,7 +1145,7 @@ button {
   margin-bottom: 25px;
   font-size: 11px;
   background-color: #fff;
-  letter-spacing: -0.16px;
+  letter-spacing: -1px;
 }
 
 .logout_cfm_cont button:first-child {
@@ -1212,7 +1204,7 @@ button {
   color: #b3b3b3;
   font-size: 11px;
   font-weight: 200;
-  letter-spacing: -0.4px;
+  letter-spacing: -1px;
 }
 
 .drawer_menu.is_active span {
@@ -1252,11 +1244,327 @@ button {
   font-size: 11px;
   font-weight: 200;
   color: #a4a4a4;
-  letter-spacing: -0.4px;
+  letter-spacing: -1px;
 }
 
-/* @media screen and (min-width: 813px) {
-  .header .user_info {
-    display: block;
+@media screen and (min-width: 813px) {
+  br {
+    display: none !important;
   }
-} */
+
+  h2 {
+    font-weight: 500;
+  }
+
+  section {
+    padding-bottom: 78px;
+    border-bottom: 1px solid #535353;
+  }
+
+  .txt_thin {
+    font-weight: 500;
+  }
+
+  .txt_thin::after {
+    content: ' ';
+  }
+
+  .gnb,
+  .srch_area {
+    padding: 0 40px;
+  }
+
+  .user_info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 40px;
+    margin: 0 -40px;
+    padding: 0 40px;
+    background-color: #2a2a2a;
+  }
+
+  .user_icon {
+    width: 17px;
+    height: 15px;
+    margin-right: 12px;
+    background: url('/images/icons/user.png') no-repeat;
+    background-size: contain;
+  }
+
+  .user_info span {
+    font-size: 16px;
+    margin-right: 24px;
+  }
+
+  .user_info button {
+    padding: 6px 14px;
+    font-size: 14x;
+    border: 1px solid #c5c5c5;
+    border-radius: 16px;
+    color: #fff;
+  }
+
+  /* header */
+  .header {
+    border-bottom: 0px;
+  }
+
+  .header .gnb_srch_area {
+    display: flex;
+  }
+
+  .header .gnb_srch_area h1 {
+    width: 117px;
+    font-size: 48px;
+    padding: 0;
+  }
+
+  .header .gnb_srch_area .ic_menu {
+    display: none;
+  }
+
+  /*  */
+  .srch_area_wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 -40px;
+  }
+
+  .srch_area_hd {
+    padding: 192px 0 34px;
+  }
+
+  .srch_area_hd h2 {
+    font-size: 48px;
+  }
+
+  .srch_form {
+    margin-bottom: 132px;
+  }
+
+  .srch_area_cont {
+    width: 720px;
+    margin: 0;
+    padding: 0 32px;
+    border-radius: 40px;
+  }
+
+  .srch_area_cont select {
+    width: 20%;
+    font-size: 20px;
+  }
+
+  .srch_area_cont::after {
+    top: 13px;
+    left: 162px;
+    font-size: 24px;
+  }
+
+  .srch_area_cont input {
+    width: 80%;
+    padding: 23px 29px 23px 23px;
+    font-size: 18px;
+  }
+
+  .srch_area_cont button {
+    right: 33px;
+    width: 25px;
+    height: 26px;
+  }
+
+  .srch_area_bread {
+    display: none;
+  }
+
+  .com_hd_tit {
+    margin-bottom: 26px;
+    padding-top: 80px;
+    font-size: 42px;
+  }
+
+  .com_hd_tit > span {
+    font-size: 42px;
+  }
+
+  .com_hd_sub_tit {
+    margin-bottom: 60px;
+    font-size: 22px;
+    color: #9f9f9f;
+  }
+
+  .prdt_ctgr_cont {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    margin: 0 80px;
+  }
+
+  .prdt_ctgr_cont li {
+    /* max-width: 320px; */
+    height: 267px;
+    background-color: #333;
+    border: 1px solid #484848;
+  }
+
+  .prdt_ctgr_cont li img {
+    max-width: 140px;
+    max-height: 105px;
+    margin-top: -35px;
+  }
+
+  .prdt_ctgr_cont li p {
+    bottom: 40px;
+    font-size: 18px;
+  }
+
+  .topics_cont {
+    grid-template-columns: repeat(6, 1fr);
+    margin: 0 80px;
+  }
+
+  .topics_cont,
+  .topics_cont li:nth-child(2n + 1),
+  .topics_cont li {
+    border: 0;
+  }
+
+  .topics_cont li:not(:last-child)::after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 56px;
+    background-color: #3e3e3e;
+  }
+
+  .topics_cont li img {
+    display: block;
+    max-width: 70px;
+    max-height: 82px;
+    margin-bottom: 36px;
+  }
+
+  .topics_cont li a {
+    padding: 0;
+  }
+
+  .topics_cont li a > p {
+    bottom: 0;
+    font-size: 18px;
+  }
+
+  /* Recent searched */
+  .recent_searched_cont {
+    margin: 0 40px;
+  }
+
+  .item_list_wrap {
+    margin: 0 80px;
+  }
+
+  .item_list_wrap ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0;
+    margin: 0;
+  }
+
+  .item_list_wrap ul li {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .item_list_wrap img {
+    max-width: 200px;
+    max-height: 220px;
+    margin-bottom: 40px;
+  }
+
+  .recent_searched .ic_arrow {
+    display: none;
+  }
+
+  .recent_searched_item_desc p {
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+  }
+
+  /* newsletter */
+  .news_letter {
+    padding: 78px 80px 80px;
+    border-bottom: 0;
+  }
+
+  .news_letter_bg {
+    width: 100%;
+    height: 430px;
+    margin-bottom: 0;
+  }
+
+  .news_letter_bg::after {
+    width: 100%;
+    height: 430px;
+  }
+
+  .news_letter_sub_tit {
+    margin-bottom: 60px;
+    font-size: 24px;
+    line-height: 1;
+    color: #9f9f9f;
+  }
+
+  .news_letter_cont {
+    font-size: 18px;
+  }
+
+  /* footer */
+  .footer {
+    position: relative;
+    display: flex;
+    padding: 0 80px;
+  }
+
+  .ft_out {
+    border-bottom: 0;
+  }
+
+  .ft_out_cont {
+    display: flex;
+  }
+
+  .ft_section {
+    margin-right: 76px;
+  }
+
+  .ft_out_cont strong {
+    font-size: 18px;
+  }
+
+  .ft_out_cont li {
+    font-size: 18px;
+    margin-bottom: 18px;
+  }
+
+  .footer .ft_srch {
+    background-color: #1f1f1f;
+    border-bottom: 0;
+  }
+
+  .ft_out_info ul {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 80px;
+    padding: 30px 0;
+  }
+
+  .ft_out_info li {
+    font-size: 15px;
+  }
+
+  .ft_out_info li:not(:last-child) {
+    margin-right: 30px;
+  }
+}

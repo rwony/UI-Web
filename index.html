@@ -20,14 +20,10 @@
       <div class="gnb">
         <!-- USER INFO (PC) -->
         <div class="user_info">
-          <div>
-            <img src="/" alt="AIDA BERA" />
-            <span>AIDA VERA</span>
-          </div>
-
+          <div class="user_icon" aria-hidden="true"></div>
+          <span>AIDA VERA</span>
           <button type="button">LOGOUT</button>
         </div>
-
         <div class="gnb_srch_area">
           <h1>
             <a href="/">
@@ -156,19 +152,19 @@
 
           <form class="srch_form" action="/" method="get">
             <div class="srch_area_cont">
-              <div class="srch_form_wrap">
-                <label class="visually_hidden">Search type</label>
-                <select>
-                  <option>Product</option>
-                </select>
+              <label class="visually_hidden" for="srch_type">Search type</label>
+              <select id="srch_type">
+                <option>Product Number</option>
+              </select>
 
-                <label class="visually_hidden">Search word</label>
-                <input type="text" placeholder="Enter your model number" />
+              <label class="visually_hidden" for="srch_word">
+                <span id="srch_word">Search word</span>
+              </label>
+              <input type="text" placeholder="Enter your model number" />
 
-                <button class="ic_common ic_search" type="submit">
-                  <span class="visually_hidden">Search</span>
-                </button>
-              </div>
+              <button class="ic_common ic_search" type="submit">
+                <span class="visually_hidden">Search</span>
+              </button>
             </div>
           </form>
 
@@ -190,136 +186,107 @@
           </p>
         </header>
 
-        <div class="prdt_ctgr_cont">
-          <ul>
-            <li>
-              <a href="/">
-                <div class="img_wrap">
-                  <img src="/images/category/ranges.png" alt="RANGES Image" />
-                </div>
-                <p>RANGES</p>
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <div class="img_wrap">
-                  <img
-                    src="/images/category/cooktops.png"
-                    alt="COOKTOPS Image"
-                  />
-                </div>
-                <p>COOKTOPS</p>
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <div class="img_wrap">
-                  <img
-                    src="/images/category/wall_ovens.png"
-                    alt="WALL OVENS Image"
-                  />
-                </div>
-                <p>WALL OVENS</p>
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <div class="img_wrap">
-                  <img
-                    src="/images/category/ventilation.png"
-                    alt="VENTILATION Image"
-                  />
-                </div>
-                <p>VENTILATION</p>
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <div class="img_wrap">
-                  <img
-                    src="/images/category/microwaves.png"
-                    alt="MICROWAVES Image"
-                  />
-                </div>
-                <p>MICROWAVES</p>
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <div class="img_wrap">
-                  <img
-                    src="/images/category/warming_drawer.png"
-                    alt="WARMING DRAWER Image"
-                  />
-                </div>
-                <p>WARMING DRAWER</p>
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <div class="img_wrap">
-                  <img src="/images/category/outdoor.png" alt="OUTDOOR Image" />
-                </div>
-                <p>OUTDOOR</p>
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <div class="img_wrap">
-                  <img
-                    src="/images/category/refrigeration.png"
-                    alt="REFRIGERATION Image"
-                  />
-                </div>
-                <p>REFRIGERATION</p>
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <div class="img_wrap">
-                  <img
-                    src="/images/category/wine_beverage.png"
-                    alt="WINE & BEVERAGE Image"
-                  />
-                </div>
-                <p>WINE &amp; BEVERAGE</p>
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <div class="img_wrap">
-                  <img
-                    src="/images/category/dishwashers.png"
-                    alt="DISHWASHERS Image"
-                  />
-                </div>
-                <p>DISHWASHERS</p>
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <div class="img_wrap">
-                  <img
-                    src="/images/category/accessories.png"
-                    alt="ACCESSORIES Image"
-                  />
-                </div>
-                <p>ACCESSORIES</p>
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <div class="img_wrap">
-                  <img
-                    src="/images/category/coffee_systems.png"
-                    alt="COFFEE SYSTEMS Image"
-                  />
-                </div>
-                <p>COFFEE SYSTEMS</p>
-              </a>
-            </li>
-          </ul>
-        </div>
+        <ul class="prdt_ctgr_cont">
+          <li>
+            <a href="/">
+              <img src="/images/category/ranges.png" alt="RANGES Image" />
+              <p>RANGES</p>
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <img src="/images/category/cooktops.png" alt="COOKTOPS Image" />
+              <p>COOKTOPS</p>
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <img
+                src="/images/category/wall_ovens.png"
+                alt="WALL OVENS Image"
+              />
+              <p>WALL OVENS</p>
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <img
+                src="/images/category/ventilation.png"
+                alt="VENTILATION Image"
+              />
+              <p>VENTILATION</p>
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <img
+                src="/images/category/microwaves.png"
+                alt="MICROWAVES Image"
+              />
+              <p>MICROWAVES</p>
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <img
+                src="/images/category/warming_drawer.png"
+                alt="WARMING DRAWER Image"
+              />
+              <p>WARMING DRAWER</p>
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <img src="/images/category/outdoor.png" alt="OUTDOOR Image" />
+              <p>OUTDOOR</p>
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <img
+                src="/images/category/refrigeration.png"
+                alt="REFRIGERATION Image"
+              />
+              <p>REFRIGERATION</p>
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <img
+                src="/images/category/wine_beverage.png"
+                alt="WINE & BEVERAGE Image"
+              />
+              <p>WINE &amp; BEVERAGE</p>
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <img
+                src="/images/category/dishwashers.png"
+                alt="DISHWASHERS Image"
+              />
+              <p>DISHWASHERS</p>
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <img
+                src="/images/category/accessories.png"
+                alt="ACCESSORIES Image"
+              />
+              <p>ACCESSORIES</p>
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <img
+                src="/images/category/coffee_systems.png"
+                alt="COFFEE SYSTEMS Image"
+              />
+              <p>COFFEE SYSTEMS</p>
+            </a>
+          </li>
+        </ul>
       </section>
 
       <!-- SECTION: TOPICS -->
@@ -332,70 +299,44 @@
           </p>
         </header>
 
-        <div class="topics_cont">
-          <ul>
-            <li>
-              <a href="/">
-                <div class="img_wrap">
-                  <img
-                    src="/images/topics/error_codes.png"
-                    alt="ERROR CODES Image"
-                  />
-                </div>
-                <p>ERROR CODES</p>
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <div class="img_wrap">
-                  <img
-                    src="/images/topics/service_guide.png"
-                    alt="SERVICE GUIDE Image"
-                  />
-                </div>
-                <p>SERVICE GUIDE</p>
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <div class="img_wrap">
-                  <img
-                    src="/images/topics/parts_catalog.png"
-                    alt="PARTS CATALOG Image"
-                  />
-                </div>
-                <p>PARTS CATALOG</p>
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <div class="img_wrap">
-                  <img src="/images/topics/symptoms.png" alt="SYMPTOMS Image" />
-                </div>
-                <p>SYMPTOMS</p>
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <div class="img_wrap">
-                  <img
-                    src="/images/topics/product_info.png"
-                    alt="PRODUCT INFO Image"
-                  />
-                </div>
-                <p>PRODUCT INFO</p>
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <div class="img_wrap">
-                  <img src="/images/topics/faq.png" alt="FAQ Image" />
-                </div>
-                <p>FAQ</p>
-              </a>
-            </li>
-          </ul>
-        </div>
+        <ul class="topics_cont">
+          <li>
+            <a href="/">
+              <img src="/images/topics/error_codes.png" alt="" />
+              <p>ERROR CODES</p>
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <img src="/images/topics/service_guide.png" alt="" />
+              <p>SERVICE GUIDE</p>
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <img src="/images/topics/parts_catalog.png" alt="" />
+              <p>PARTS CATALOG</p>
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <img src="/images/topics/symptoms.png" alt="" />
+              <p>SYMPTOMS</p>
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <img src="/images/topics/product_info.png" alt="" />
+              <p>PRODUCT INFO</p>
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <img src="/images/topics/faq.png" alt="" />
+              <p>FAQ</p>
+            </a>
+          </li>
+        </ul>
       </section>
 
       <!-- SECTION: RECENT SEARCHED -->
@@ -413,7 +354,7 @@
                 <li>
                   <img
                     src="/images/category/wall_ovens.png"
-                    alt="RF22N9781SG/AA Image"
+                    alt="RF22N9781SG/AA"
                   />
                   <div class="recent_searched_item_desc">
                     <p>
@@ -426,35 +367,36 @@
                   </div>
                 </li>
 
-                <!-- <li>
-                <img
-                  src="/images/category/microwaves.png"
-                  alt="NX58M9960PS/AA Image"
-                />
-                <div class="recent_searched_item_desc">
-                  <p>
-                    5.8 cu. ft. 30" Gas Chef Collection Pro Range with Dual
-                    Convection
-                  </p>
-                  <a href="/">
-                    <span>NX58M9960PS/AA</span>
-                  </a>
-                </div>
-              </li>
+                <li>
+                  <img
+                    src="/images/category/microwaves.png"
+                    alt="NX58M9960PS/AA"
+                  />
+                  <div class="recent_searched_item_desc">
+                    <p>
+                      5.8 cu. ft. 30" Gas Chef Collection Pro Range with Dual
+                      Convection
+                    </p>
+                    <a href="/">
+                      <span>NX58M9960PS/AA</span>
+                    </a>
+                  </div>
+                </li>
 
-              <li>
-                <img
-                  src="/images/category/accessories.png"
-                  alt="NV51M9770SM/AA Image"
-                />
-                <div class="recent_searched_item_desc">
-                  <p>30" Chef Collection Single Wall Oven with Flex Duo™</p>
-                  <a href="/">
-                    <span>NV51M9770SM/AA</span>
-                  </a>
-                </div>
-              </li>
+                <li>
+                  <img
+                    src="/images/category/accessories.png"
+                    alt="NV51M9770SM/AA"
+                  />
+                  <div class="recent_searched_item_desc">
+                    <p>30" Chef Collection Single Wall Oven with Flex Duo™</p>
+                    <a href="/">
+                      <span>NV51M9770SM/AA</span>
+                    </a>
+                  </div>
+                </li>
 
+                <!--
               <li>
                 <img
                   src="/images/category/cooktops.png"
@@ -536,7 +478,7 @@
       <!-- SECTION: FOOTER LEFT -->
       <section class="ft_out">
         <div class="ft_out_cont">
-          <div class="">
+          <div class="ft_section">
             <strong>PRODUCT SUPPORT</strong>
             <ul>
               <li>
@@ -560,7 +502,7 @@
             </ul>
           </div>
 
-          <div class="ft_out_content_topic">
+          <div class="ft_section ft_out_content_topic">
             <strong>TOPIC</strong>
             <ul>
               <li>
@@ -584,7 +526,7 @@
             </ul>
           </div>
 
-          <div class="ft_out_content_training">
+          <div class="ft_section ft_out_content_training">
             <strong>TRAINING</strong>
             <ul>
               <li>
@@ -596,7 +538,7 @@
             </ul>
           </div>
 
-          <div class="ft_out_content_newsletters">
+          <div class="ft_section ft_out_content_newsletters">
             <strong><a href="/">NEWSLETTERS</a></strong>
           </div>
         </div>
@@ -664,9 +606,12 @@
         </header>
 
         <form action="/" method="get">
-          <label class="visually_hidden">Search word</label>
+          <label class="visually_hidden" for="srch_modal_word"
+            >Search word</label
+          >
           <input
             class="search_input"
+            id="srch_modal_word"
             type="text"
             name="search_word"
             placeholder="Search"
@@ -808,8 +753,8 @@
 
           <form action="/" method="post">
             <div class="input_id">
-              <label class="visually_hidden">User ID</label>
-              <span class="ic_user">
+              <label class="visually_hidden" for="user_id">User ID</label>
+              <span class="ic_user" id="user_id">
                 <span class="visually_hidden">ID</span>
               </span>
               <input type="text" name="user_id" placeholder="USER ID" />
@@ -827,7 +772,6 @@
             </div>
             <div class="input_check">
               <div class="check_remember">
-                <label class="visually_hidden">Remember user check</label>
                 <input
                   type="checkbox"
                   name="check_remember"
